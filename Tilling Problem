@@ -1,0 +1,12 @@
+def Tilling(length,width):
+    price = ''
+    
+    while price == '':
+        try:
+            price = int(input("How much does 1 sq.ft cost? "))
+        except ValueError:
+            print("Please enter a correct dollar value")
+        else:
+            cost = (length*width*price)
+            print("It will cost ${} to cover the flooring".format(cost))
+    
