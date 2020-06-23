@@ -1,0 +1,46 @@
+#Airline Reservation System
+import random
+
+print("\n\nWelcome! OJO International Airport\n")
+
+
+class Passenger():
+    def __init__(self,first_name,last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.reservation_id = []
+        self.cost = 0
+        self.passenger_record = {
+            'Name' : self.first_name + " " + self.last_name,
+            'Reservation ID' : self.first_name[0] + self.last_name[0] + str(random.randrange(10, 1000, 2))
+                                }
+        print(self.passenger_record)
+        
+class Reservation():
+
+    def __init__(self, airline_name,section):
+        super(Reservation, self).__init__()
+        self.airline_name = airline_name
+        
+        if section == "First":
+            self.seats = 50
+            self.price = 1075
+        elif section == "Business":
+            self.seats = 100
+            self.price = 750
+        else :
+            self.seats = 250
+            self.price = 500  
+                
+                
+        if self.seats > 0:
+            self.seats -= 1
+            print("Status: Seat Available!"+"\n")
+            print("$"+ str(self.price))
+        else:
+            print("Status: Seat Unavailable!")
+
+#Test Code
+
+A1 = Passenger(input("First Name "),input("Last Name: "))
+B1 = Reservation(airline_name = input("Airline Code: "),section = input("Class: "))
