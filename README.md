@@ -1,6 +1,6 @@
-- 👋 Hi, I’m @remiojojr
-- 👀 I’m interested in Analytics
-- 🌱 I’m currently learning Artificial Intelligence
+- 👋🏾 Hi, I’m @remiojojr
+- ⚗️ I’m interested in Analytics
+- 🤖 I’m currently learning Artificial Intelligence
 - 💞️ I’m looking to collaborate on anything
 - 📫 How to reach me www.linkedin.com/in/remiojojr
 <!---
